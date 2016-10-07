@@ -47,24 +47,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-
-# Gems related to Grape and Swagger
-gem 'will_paginate'
 gem 'grape'
-gem 'doorkeeper'
-# Basic requirements
-gem 'haml' # All the view files are in haml
-gem 'kaminari', github: 'amatsuda/kaminari', branch: '0-17-stable' #Version to support activeadmin on rails 5
-# Grape extensions
-gem 'wine_bouncer', github: 'antek-drzewiecki/wine_bouncer' # Authentication, adds swagger documentation
-gem 'api-pagination' # API pagination. Relies on kaminari or will_paginate being present
-gem 'grape-swagger', github: 'tim-vandecasteele/grape-swagger'
-gem 'grape-swagger-entity'
-gem 'grape-rabl'
-gem 'active_model_serializers' #, github: 'rails/activemodel-serializers-xml' #Version to support activeadmin on rails 5
-gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml' # To fix a Draper deprecation error for Active Admin
-gem 'grape-active_model_serializers'
-gem 'kramdown'
-gem 'rack-cors', :require => 'rack/cors' # Make Swagger spec CORS, required!
-gem 'rack-p3p'
-gem 'arel', '~> 7.1.0'
+#use for api documentions
+gem 'grape-swagger'
+gem 'grape-swagger-rails'
