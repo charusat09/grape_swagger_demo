@@ -9,7 +9,6 @@ module API
         mount_path: "/api/v1/swagger_doc",
         hide_format: true
       )
-      # mount API::V1::AnotherResource
     end
   end
 end  
