@@ -51,3 +51,4 @@ gem 'grape'
 #use for api documentions
 gem 'grape-swagger'
 gem 'grape-swagger-rails'
+gem 'swagger-docs'
